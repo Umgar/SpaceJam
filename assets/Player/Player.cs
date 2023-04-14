@@ -5,7 +5,7 @@ public partial class Player : Area2D
 {
 
 	[Export]
-    public int Speed = 400; // How fast the player will move (pixels/sec).
+	public int Speed = 400; // How fast the player will move (pixels/sec).
 
 	[Export]
 	public int ReverseSpeed = 200;
@@ -13,7 +13,7 @@ public partial class Player : Area2D
 	[Export]
 	public Vector2 StartPoint = new Vector2(250,250); // Player's starting position
 
-    public Vector2 ScreenSize; // Size of the game window.
+	public Vector2 ScreenSize; // Size of the game window.
 
 
 	// Called when the node enters the scene tree for the first time.
