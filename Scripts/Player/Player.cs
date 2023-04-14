@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class Player : Area2D
+public partial class Player : CharacterBody2D
 {
 
 	[Export]
@@ -20,7 +20,7 @@ public partial class Player : Area2D
 	public override void _Ready()
 	{
 		ScreenSize = GetViewportRect().Size;
-		Position = StartPoint;
+		//Position = StartPoint;
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -28,30 +28,17 @@ public partial class Player : Area2D
 	{
 
 		var velocity = Vector2.Zero; // The player's movement vector.
-		//velocity.Y -= 1; // The player's default velocity
+		velocity.Y -= 1; // The player's default velocity
 		Speed = ReverseSpeed * 2;
 
-		if (Input.IsActionPressed("move_right"))
-		{
+		if(Input.IsActionPressed("move_right"))
 			velocity.X += 1;
-			//Rotate(5f);
-		}
-
-		if (Input.IsActionPressed("move_left"))
-		{
+		if(Input.IsActionPressed("move_left"))
 			velocity.X -= 1;
-		}
-
-		if (Input.IsActionPressed("brake"))
-		{
+		if(Input.IsActionPressed("move_up"))
+			velocity.Y -= 1;
+		if(Input.IsActionPressed("move_down"))
 			velocity.Y += 1;
-
-			if(velocity.Length() == 0) { 
-				velocity.Y += 1;
-				Speed = ReverseSpeed;  // próbuje tu zrobić coś ala cofanie xddd
-			} 
-
-		}
 
 		var animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 
@@ -65,11 +52,11 @@ public partial class Player : Area2D
 			animatedSprite2D.Stop();
 		}
 
-		Position += velocity * (float)delta;
-		Position = new Vector2(
-			x: Mathf.Clamp(Position.X, 0, ScreenSize.X),
-			y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
-		);
+		MoveAndCollide(velocity * (float)delta);
+		// Position = new Vector2(
+		// 	x: Mathf.Clamp(Position.X, 0, ScreenSize.X),
+		// 	y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
+		// );
 
 
 	}
