@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://c5qoif5kju6fh"]
+
+[ext_resource type="PackedScene" uid="uid://t6hpgle5bije" path="res://scens/Player.tscn" id="1_j8erj"]
+[ext_resource type="TileSet" uid="uid://ctu1ungyy8g2v" path="res://assets/tilemap/level01.tres" id="2_supw7"]
+
+[node name="level01" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_j8erj")]
+visible = false
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = ExtResource("2_supw7")
+format = 2

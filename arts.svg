@@ -23,33 +23,138 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:snap-global="false"
+     inkscape:snap-global="true"
      inkscape:zoom="4.1524866"
-     inkscape:cx="40.698506"
-     inkscape:cy="44.672029"
+     inkscape:cx="217.21924"
+     inkscape:cy="29.259577"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer1"
+     inkscape:snap-bbox="true"
+     showguides="true"
+     inkscape:guide-bbox="true" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerclip"
+       id="path-effect2486"
+       is_visible="true"
+       lpeversion="1"
+       inverse="true"
+       flatten="false"
+       hide_clip="false"
+       message="Jeśli po konwersji przycięcia na ścieżki nie zostanie spłaszczony wynik, użyj reguły wypełniania w oknie dialogowym &lt;b&gt;wypełnienie i obrys&lt;/b&gt; ." />
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2482">
+      <path
+         id="path2484"
+         style="display:none;fill:#2b0000;fill-opacity:0.438462;stroke-width:1.13745;stroke-linecap:round;stroke-linejoin:round"
+         d="m 76.379521,22.451171 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.921875,0 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.919924,0 3.921872,32.9375 -3.921872,32.935548 h 4.773438 l 3.921872,-32.935548 -3.921872,-32.9375 z" />
+      <path
+         id="lpe_path-effect2486"
+         style="fill:#2b0000;fill-opacity:0.438462;stroke-width:1.13745;stroke-linecap:round;stroke-linejoin:round"
+         class="powerclip"
+         d="M 34.642578,17.849609 H 130.61523 V 92.925781 H 34.642578 Z m 41.736943,4.601562 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.921875,0 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.919924,0 3.921872,32.9375 -3.921872,32.935548 h 4.773438 l 3.921872,-32.935548 -3.921872,-32.9375 z" />
+    </clipPath>
+  </defs>
   <g
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <g
+       id="g7063"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\player\player.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         id="path1219"
+         style="fill:#d93daf;stroke-width:2.11276;stroke-linecap:round;stroke-linejoin:round;stroke:#000000;stroke-opacity:1"
+         inkscape:transform-center-x="-3.7911516"
+         d="M 39.642578,5.7519531 V 40.044095 L 53.128906,55.388672 39.642578,70.733859 V 105.02539 L 82.628906,80.207031 125.61523,55.388672 82.628906,30.570312 Z"
+         transform="scale(0.26458333)"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         id="path1463"
+         style="fill:#331859;stroke-width:1.71059;stroke-linecap:round;stroke-linejoin:round;stroke:#26010b;stroke-opacity:1"
+         inkscape:transform-center-x="-3.7911516"
+         d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
+         transform="scale(0.26458333)"
+         clip-path="url(#clipPath2482)"
+         inkscape:path-effect="#path-effect2486"
+         inkscape:original-d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
+         sodipodi:nodetypes="ccccccccc" />
+    </g>
     <path
-       id="path897"
-       style="fill:#2b0000;stroke:#000000;stroke-width:0.558168;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       inkscape:transform-center-x="-0.1277999"
-       inkscape:transform-center-y="-5.1797444"
-       d="m 7.9562532,-3.2162913 -3.7775125,13.4010383 -1.8770293,4.883774 -5.6003052,14.572376 2.0107888,-0.06543 -0.00147,0.005 0.4368253,-0.0192 9.218772,-0.301544 L 20.031609,28.87781 13.966627,14.686633 12.474019,11.193957 Z" />
-    <path
-       id="path3478"
-       style="fill:#d40000;stroke:#000000;stroke-width:0.470737;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-       inkscape:transform-center-x="-0.091860188"
-       inkscape:transform-center-y="-5.1257045"
-       d="m 8.0360042,-3.2679024 -2.715102,13.2612272 -1.3491223,4.8328212 -4.02524148,14.420346 1.44526238,-0.06475 -0.00105,0.0049 0.3139699,-0.01901 6.6260287,-0.298381 8.3844716,-0.377927 -4.35923,-14.043123 -1.072818,-3.456238 z" />
+       id="path5525"
+       style="fill:#fae1da;fill-opacity:1;stroke-width:0.577079;stroke-linecap:round;stroke-linejoin:round"
+       d="m 63.798684,2.1298252 h 24 V 26.129825 h -24 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\tilemap.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <g
+       id="g7074"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\tilemap.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         id="rect3115"
+         style="fill:#fae1da;stroke-width:0.577079;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
+         d="m 39.798684,2.129825 h 24 v 24 h -24 z" />
+      <path
+         style="fill:none;stroke:#d93daf;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 47.324048,2.1298208 V 18.794441 h -4.77362 v 7.33538"
+         id="path4744"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="fill:none;stroke:#c636d9;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 46.142947,26.129821 v -5.459065 h 6.053147 V 9.2204248 h 3.395669 V 5.4677951 H 50.424439 V 2.1298208"
+         id="path4746"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:none;stroke:#d93daf;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 60.660655,2.1298208 v 8.7263652 h -5.019682 v 5.436502 h 6.988187 v 7.457149 h -3.001966 v 2.379984"
+         id="path4748"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:none;stroke:#26010b;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 39.798683,8.4987653 h 4.17891 V 2.1298208"
+         id="path4750"
+         sodipodi:nodetypes="ccc" />
+    </g>
+    <g
+       id="g7086"
+       transform="matrix(-1,0,0,1,151.59737,2e-7)"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\tilemap.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         id="path7076"
+         style="fill:#fae1da;fill-opacity:1;stroke-width:0.577079;stroke-linecap:round;stroke-linejoin:round"
+         d="m 39.798684,2.129825 h 24 v 24 h -24 z" />
+      <path
+         style="fill:none;stroke:#d93daf;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="M 47.324048,2.1298208 V 18.794441 h -4.77362 v 7.33538"
+         id="path7078"
+         sodipodi:nodetypes="cccc" />
+      <path
+         style="fill:none;stroke:#c636d9;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 46.142947,26.129821 v -5.459065 h 6.053147 V 9.2204248 h 3.395669 V 5.4677951 H 50.424439 V 2.1298208"
+         id="path7080"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:none;stroke:#d93daf;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 60.660655,2.1298208 v 8.7263652 h -5.019682 v 5.436502 h 6.988187 v 7.457149 h -3.001966 v 2.379984"
+         id="path7082"
+         sodipodi:nodetypes="cccccccc" />
+      <path
+         style="fill:none;stroke:#26010b;stroke-width:0.285747px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 39.798683,8.4987653 h 4.17891 V 2.1298208"
+         id="path7084"
+         sodipodi:nodetypes="ccc" />
+    </g>
   </g>
 </svg>

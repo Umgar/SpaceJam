@@ -28,13 +28,13 @@ public partial class Player : Area2D
 	{
 
 		var velocity = Vector2.Zero; // The player's movement vector.
-		velocity.Y -= 1; // The player's default velocity
+		//velocity.Y -= 1; // The player's default velocity
 		Speed = ReverseSpeed * 2;
 
 		if (Input.IsActionPressed("move_right"))
 		{
 			velocity.X += 1;
-			Rotate(5f);
+			//Rotate(5f);
 		}
 
 		if (Input.IsActionPressed("move_left"))
