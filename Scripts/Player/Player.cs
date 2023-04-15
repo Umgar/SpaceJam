@@ -8,7 +8,7 @@ public partial class Player : CharacterBody2D
 	public float Speed = 400; // How fast the player will move (pixels/sec).
 
 	public float ReverseSpeed = 200;
-
+	AnimatedSprite2D animatedSprite2D;
 
 	public Vector2 ScreenSize; // Size of the game window.
 
@@ -17,13 +17,13 @@ public partial class Player : CharacterBody2D
 	public override void _Ready()
 	{
 		ScreenSize = GetViewportRect().Size;
-
+		animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-		Speed += 0.01f;
+		//Speed += 0.01f;
 		var velocity = Vector2.Zero; // The player's movement vector.
 		ReverseSpeed = Speed / 2;
 
@@ -36,7 +36,7 @@ public partial class Player : CharacterBody2D
 		if(Input.IsActionPressed("move_down"))
 			velocity.Y += 1;
 
-		var animatedSprite2D = GetNode<AnimatedSprite2D>("AnimatedSprite2D");
+
 
 		if (velocity.Length() > 0)
 		{
@@ -55,4 +55,5 @@ public partial class Player : CharacterBody2D
 		);
 	
 	}
+	
 }

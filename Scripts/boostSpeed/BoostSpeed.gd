@@ -12,6 +12,8 @@ func _ready():
 		MaxVal = MinVal
 		MinVal = MaxVal
 	value = randi_range(MinVal, MaxVal)
+	var newScale = randf_range(scale.x/2, scale.x)
+	scale.x = newScale
 	textField.text = str(value)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

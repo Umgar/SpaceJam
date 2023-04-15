@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://b218ohbj1msrj"]
+
+[ext_resource type="Script" path="res://Scripts/Player/trail_2d.gd" id="1_i7ehu"]
+
+[sub_resource type="Curve" id="Curve_5anu7"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_3fm86"]
+offsets = PackedFloat32Array(0.511962, 1)
+colors = PackedColorArray(0.827451, 0, 0.0705882, 1, 0.827451, 0, 0.0705882, 0.701961)
+
+[node name="Trail2D" type="Line2D"]
+z_index = -6
+width_curve = SubResource("Curve_5anu7")
+default_color = Color(1, 0.309804, 0.639216, 1)
+gradient = SubResource("Gradient_3fm86")
+script = ExtResource("1_i7ehu")

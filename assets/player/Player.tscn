@@ -1,7 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://t6hpgle5bije"]
+[gd_scene load_steps=3 format=3 uid="uid://t6hpgle5bije"]
 
 [ext_resource type="PackedScene" uid="uid://bq8lsayujtvbf" path="res://assets/player/character_body_2d.tscn" id="1_tgi1o"]
+[ext_resource type="PackedScene" uid="uid://b218ohbj1msrj" path="res://assets/player/trail_2d.tscn" id="2_2w8ey"]
 
 [node name="Player" type="Area2D"]
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_tgi1o")]
+
+[node name="Trail2D" parent="CharacterBody2D" instance=ExtResource("2_2w8ey")]
+position = Vector2(0, 28)
