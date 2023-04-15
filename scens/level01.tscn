@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://c5qoif5kju6fh"]
+[gd_scene load_steps=5 format=3 uid="uid://c5qoif5kju6fh"]
 
 [ext_resource type="Script" path="res://Scripts/GenerateChangers.gd" id="2_2txik"]
 [ext_resource type="PackedScene" uid="uid://bq8lsayujtvbf" path="res://assets/player/character_body_2d.tscn" id="2_yqsu5"]
+[ext_resource type="Script" path="res://Scripts/scoring/ScoreLabel.cs" id="3_xtjn7"]
+
+[sub_resource type="Theme" id="Theme_j4mwy"]
+default_font_size = 22
 
 [node name="level01" type="Node2D"]
 
@@ -17,5 +21,12 @@ player = NodePath("../CharacterBody2D")
 
 [node name="Timer" type="Timer" parent="GenerateChangers"]
 autostart = true
+
+[node name="ScoreLabel" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme = SubResource("Theme_j4mwy")
+text = "Score: 0"
+script = ExtResource("3_xtjn7")
 
 [connection signal="timeout" from="GenerateChangers/Timer" to="GenerateChangers" method="_on_timer_timeout"]
