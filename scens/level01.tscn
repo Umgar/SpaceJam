@@ -1,19 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://c5qoif5kju6fh"]
+[gd_scene load_steps=3 format=3 uid="uid://c5qoif5kju6fh"]
 
+[ext_resource type="Script" path="res://Scripts/GenerateChangers.gd" id="2_2txik"]
 [ext_resource type="PackedScene" uid="uid://bq8lsayujtvbf" path="res://assets/player/character_body_2d.tscn" id="2_yqsu5"]
-[ext_resource type="PackedScene" uid="uid://dff0lmkbr214y" path="res://assets/ChangeSpeed/speedAdd.tscn" id="3_13cd0"]
-[ext_resource type="Script" path="res://scripts/camera/FreezeCamera.gd" id="3_uvmjp"]
 
 [node name="level01" type="Node2D"]
 
-[node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("Player")]
+[node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -193)
 position_smoothing_enabled = true
-script = ExtResource("3_uvmjp")
-Player = NodePath("../CharacterBody2D")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_yqsu5")]
 
-[node name="Node2D" parent="." instance=ExtResource("3_13cd0")]
-position = Vector2(-125, -323)
-scale = Vector2(0.75, 0.75)
+[node name="GenerateChangers" type="Node2D" parent="." node_paths=PackedStringArray("player")]
+script = ExtResource("2_2txik")
+player = NodePath("../CharacterBody2D")
+
+[node name="Timer" type="Timer" parent="GenerateChangers"]
+autostart = true
+
+[connection signal="timeout" from="GenerateChangers/Timer" to="GenerateChangers" method="_on_timer_timeout"]
