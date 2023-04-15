@@ -5,10 +5,9 @@ public partial class Player : CharacterBody2D
 {
 
 	[Export]
-	public int Speed = 400; // How fast the player will move (pixels/sec).
+	public float Speed = 400; // How fast the player will move (pixels/sec).
 
-	[Export]
-	public int ReverseSpeed = 200;
+	public float ReverseSpeed = 200;
 
 	[Export]
 	public Vector2 StartPoint = new Vector2(250,250); // Player's starting position
@@ -26,10 +25,10 @@ public partial class Player : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
-
+		Speed += 0.01f;
 		var velocity = Vector2.Zero; // The player's movement vector.
 		velocity.Y -= 1; // The player's default velocity
-		Speed = ReverseSpeed * 2;
+		ReverseSpeed = Speed / 2;
 
 		if(Input.IsActionPressed("move_right"))
 			velocity.X += 1;
@@ -53,11 +52,10 @@ public partial class Player : CharacterBody2D
 		}
 
 		MoveAndCollide(velocity * (float)delta);
-		// Position = new Vector2(
-		// 	x: Mathf.Clamp(Position.X, 0, ScreenSize.X),
-		// 	y: Mathf.Clamp(Position.Y, 0, ScreenSize.Y)
-		// );
-
-
+		Position = new Vector2(
+		x: Mathf.Clamp(Position.X, -(ScreenSize.X/2), ScreenSize.X/2),
+		y: Position.Y
+		);
+	
 	}
 }

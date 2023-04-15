@@ -26,8 +26,8 @@
      showgrid="false"
      inkscape:snap-global="true"
      inkscape:zoom="4.1524866"
-     inkscape:cx="143.76928"
-     inkscape:cy="88.742008"
+     inkscape:cx="185.19024"
+     inkscape:cy="171.58394"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -41,13 +41,37 @@
      id="defs2">
     <linearGradient
        inkscape:collect="always"
+       id="linearGradient4114">
+      <stop
+         style="stop-color:#5f118b;stop-opacity:1"
+         offset="0"
+         id="stop4110" />
+      <stop
+         style="stop-color:#6200ff;stop-opacity:1"
+         offset="1"
+         id="stop4112" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3820">
+      <stop
+         style="stop-color:#430e8b;stop-opacity:1"
+         offset="0"
+         id="stop3816" />
+      <stop
+         style="stop-color:#aa00ff;stop-opacity:1"
+         offset="1"
+         id="stop3818" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
        id="linearGradient2600">
       <stop
-         style="stop-color:#e9c6af;stop-opacity:1;"
+         style="stop-color:#009477;stop-opacity:1"
          offset="0"
          id="stop2596" />
       <stop
-         style="stop-color:#d38d5f;stop-opacity:1"
+         style="stop-color:#00ff16;stop-opacity:1"
          offset="1"
          id="stop2598" />
     </linearGradient>
@@ -77,11 +101,32 @@
        inkscape:collect="always"
        xlink:href="#linearGradient2600"
        id="linearGradient2602"
+       x1="224.60843"
+       y1="123.07044"
+       x2="224.60843"
+       y2="44.486378"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.83200925,0,0,0.06780221,-129.24649,45.08162)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3820"
+       id="linearGradient3656"
+       gradientUnits="userSpaceOnUse"
        x1="226.01012"
        y1="98.637054"
        x2="224.60843"
        y2="44.486378"
-       gradientUnits="userSpaceOnUse" />
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,18.751287,-2.3774954e-7)" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4114"
+       id="linearGradient3904"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.26458333,0,0,0.26458333,37.502581,-2.3774954e-7)"
+       x1="226.01012"
+       y1="98.637054"
+       x2="224.60843"
+       y2="44.486378" />
   </defs>
   <g
      inkscape:label="Warstwa 1"
@@ -113,8 +158,24 @@
     </g>
     <path
        id="rect1250"
-       style="fill:url(#linearGradient2602);stroke:#26010b;stroke-width:2.06686;stroke-linecap:round;stroke-linejoin:round;fill-opacity:1"
-       d="M 193.01953 44.748047 L 189.24023 68.919922 L 189.26172 68.919922 L 189.26172 134.81641 L 255.22656 134.81641 L 255.22656 68.919922 L 255.24805 68.919922 L 251.4668 44.748047 L 193.01953 44.748047 z "
-       transform="scale(0.26458333)" />
+       style="fill:url(#linearGradient2602);fill-opacity:1;stroke:#26010b;stroke-width:0.490904;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.61538464"
+       d="m 31.34754,48.115636 -3.144414,1.638907 h 0.01795 v 4.467927 h 54.883313 v -4.467927 h 0.01795 l -3.146035,-1.638907 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect.png"
+       inkscape:export-xdpi="89.607422"
+       inkscape:export-ydpi="89.607422" />
+    <path
+       id="path3654"
+       style="fill:url(#linearGradient3656);fill-opacity:1;stroke:#26010b;stroke-width:0.546857;stroke-linecap:round;stroke-linejoin:round"
+       d="m 69.821037,11.839587 -0.99994,6.395475 h 0.0057 V 35.670175 H 86.27998 V 18.235062 h 0.0057 l -1.000456,-6.395475 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect2.png"
+       inkscape:export-xdpi="89.607422"
+       inkscape:export-ydpi="89.607422" />
+    <path
+       id="path3902"
+       style="fill:url(#linearGradient3904);fill-opacity:1;stroke:#26010b;stroke-width:0.546857;stroke-linecap:round;stroke-linejoin:round"
+       d="m 88.572331,11.839587 -0.99994,6.395475 h 0.0057 V 35.670175 H 105.03127 V 18.235062 h 0.006 l -1.00046,-6.395475 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect3.png"
+       inkscape:export-xdpi="89.607422"
+       inkscape:export-ydpi="89.607422" />
   </g>
 </svg>
