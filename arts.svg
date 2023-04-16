@@ -25,9 +25,9 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:snap-global="true"
-     inkscape:zoom="4.1524866"
-     inkscape:cx="185.19024"
-     inkscape:cy="171.58394"
+     inkscape:zoom="0.73406286"
+     inkscape:cx="467.26244"
+     inkscape:cy="436.61111"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -39,6 +39,18 @@
      inkscape:guide-bbox="true" />
   <defs
      id="defs2">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient6968">
+      <stop
+         style="stop-color:#3d133c;stop-opacity:1"
+         offset="0"
+         id="stop6964" />
+      <stop
+         style="stop-color:#00ff16;stop-opacity:1"
+         offset="1"
+         id="stop6966" />
+    </linearGradient>
     <linearGradient
        inkscape:collect="always"
        id="linearGradient4114">
@@ -63,18 +75,6 @@
          offset="1"
          id="stop3818" />
     </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient2600">
-      <stop
-         style="stop-color:#009477;stop-opacity:1"
-         offset="0"
-         id="stop2596" />
-      <stop
-         style="stop-color:#00ff16;stop-opacity:1"
-         offset="1"
-         id="stop2598" />
-    </linearGradient>
     <inkscape:path-effect
        effect="powerclip"
        id="path-effect2486"
@@ -95,18 +95,18 @@
          id="lpe_path-effect2486"
          style="fill:#2b0000;fill-opacity:0.438462;stroke-width:1.13745;stroke-linecap:round;stroke-linejoin:round"
          class="powerclip"
-         d="M 34.642578,17.849609 H 130.61523 V 92.925781 H 34.642578 Z m 41.736943,4.601562 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.921875,0 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.919924,0 3.921872,32.9375 -3.921872,32.935548 h 4.773438 l 3.921872,-32.935548 -3.921872,-32.9375 z" />
+         d="M 33.787283,16.994352 H 131.47037 V 93.781038 H 33.787283 Z m 42.592238,5.456819 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.921875,0 3.921876,32.9375 -3.921876,32.935548 h 4.773437 l 3.921876,-32.935548 -3.921876,-32.9375 z m 7.919924,0 3.921872,32.9375 -3.921872,32.935548 h 4.773438 l 3.921872,-32.935548 -3.921872,-32.9375 z" />
     </clipPath>
     <linearGradient
        inkscape:collect="always"
-       xlink:href="#linearGradient2600"
+       xlink:href="#linearGradient6968"
        id="linearGradient2602"
        x1="224.60843"
-       y1="123.07044"
+       y1="118.37171"
        x2="224.60843"
        y2="44.486378"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.83200925,0,0,0.06780221,-129.24649,45.08162)" />
+       gradientTransform="matrix(0.83200925,0,0,0.06780221,-92.842364,36.611353)" />
     <linearGradient
        inkscape:collect="always"
        xlink:href="#linearGradient3820"
@@ -127,42 +127,28 @@
        y1="98.637054"
        x2="224.60843"
        y2="44.486378" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient4114"
+       id="linearGradient2471"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.83200925,0,0,0.06780221,-92.662146,46.476532)"
+       x1="224.60843"
+       y1="118.37171"
+       x2="224.60843"
+       y2="44.486378" />
   </defs>
   <g
      inkscape:label="Warstwa 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <g
-       id="g7063"
-       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\player\player.png"
-       inkscape:export-xdpi="300"
-       inkscape:export-ydpi="300"
-       transform="rotate(-90,21.862231,14.654919)">
-      <path
-         id="path1219"
-         style="fill:#d93daf;stroke:#000000;stroke-width:2.11276;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-         inkscape:transform-center-x="-3.7911516"
-         d="M 39.642578,5.7519531 V 40.044095 L 53.128906,55.388672 39.642578,70.733859 V 105.02539 L 82.628906,80.207031 125.61523,55.388672 82.628906,30.570312 Z"
-         transform="scale(0.26458333)"
-         sodipodi:nodetypes="ccccccccc" />
-      <path
-         id="path1463"
-         style="fill:#331859;stroke:#26010b;stroke-width:1.71059;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
-         inkscape:transform-center-x="-3.7911516"
-         d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
-         transform="scale(0.26458333)"
-         clip-path="url(#clipPath2482)"
-         inkscape:path-effect="#path-effect2486"
-         inkscape:original-d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
-         sodipodi:nodetypes="ccccccccc" />
-    </g>
     <path
        id="rect1250"
-       style="fill:url(#linearGradient2602);fill-opacity:1;stroke:#26010b;stroke-width:0.490904;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.61538464"
-       d="m 31.34754,48.115636 -3.144414,1.638907 h 0.01795 v 4.467927 h 54.883313 v -4.467927 h 0.01795 l -3.146035,-1.638907 z"
+       style="fill:url(#linearGradient2602);fill-opacity:1;stroke:#26010b;stroke-width:0.490904;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.615385"
+       d="m 67.751666,39.645369 -3.144414,1.638907 h 0.01795 v 4.467927 h 54.883308 v -4.467927 h 0.0179 l -3.14603,-1.638907 z"
        inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect.png"
-       inkscape:export-xdpi="89.607422"
-       inkscape:export-ydpi="89.607422" />
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
     <path
        id="path3654"
        style="fill:url(#linearGradient3656);fill-opacity:1;stroke:#26010b;stroke-width:0.546857;stroke-linecap:round;stroke-linejoin:round"
@@ -177,5 +163,81 @@
        inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect3.png"
        inkscape:export-xdpi="89.607422"
        inkscape:export-ydpi="89.607422" />
+    <g
+       id="g2111"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\player\player.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
+      <path
+         id="path1219"
+         style="fill:#d93daf;stroke:#000000;stroke-width:0.559001;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:transform-center-x="-3.7911516"
+         d="m 8.7291829,26.028385 h 9.0731291 l 4.059919,-3.568258 4.060081,3.568258 h 9.072967 L 28.428755,14.654919 21.862231,3.2814541 15.295707,14.654919 Z"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         id="path1463"
+         style="fill:#331859;stroke:#26010b;stroke-width:1.71059;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+         inkscape:transform-center-x="-3.7911516"
+         d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
+         transform="matrix(0,-0.26458333,0.26458333,0,7.207312,36.51715)"
+         clip-path="url(#clipPath2482)"
+         inkscape:path-effect="#path-effect2486"
+         inkscape:original-d="M 39.642578,22.849609 V 43.823623 L 53.128906,55.388672 39.642578,66.954332 V 87.925781 L 82.628906,71.658203 125.61523,55.388672 82.628906,39.119141 Z"
+         sodipodi:nodetypes="ccccccccc" />
+      <path
+         id="path955"
+         style="fill:#000000;fill-opacity:0.35521236;stroke:none;stroke-width:0.559;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         inkscape:transform-center-x="-3.7911516"
+         d="M 21.862231,3.2814531 V 22.460127 l 3.040232,3.568258 10.092817,0 -6.566524,-11.373466 z"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <path
+       id="path2469"
+       style="fill:url(#linearGradient2471);fill-opacity:1;stroke:#26010b;stroke-width:0.490904;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.615385"
+       d="m 67.931884,49.510548 -3.144414,1.638907 h 0.01795 v 4.467927 h 54.88331 v -4.467927 h 0.0179 l -3.14603,-1.638907 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\tilemap\rect2.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="path7130"
+       style="fill:none;fill-opacity:1;stroke:#26010b;stroke-width:0.490905;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 6.6822643,31.365223 -3.144512,1.639176 h 0.01809 v 4.467944 h -0.01809 l 3.144512,1.63866 H 55.311336 l 3.14606,-1.63866 h -0.01809 v -4.467944 h 0.01809 l -3.14606,-1.639176 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\Bar\shell.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       sodipodi:type="star"
+       style="fill:#26010b;fill-opacity:1;stroke:none;stroke-width:2.11276;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="path19261"
+       inkscape:flatsided="false"
+       sodipodi:sides="3"
+       sodipodi:cx="195.48735"
+       sodipodi:cy="303.7887"
+       sodipodi:r1="14.303952"
+       sodipodi:r2="7.1519761"
+       sodipodi:arg1="-1.5707963"
+       sodipodi:arg2="-0.52359878"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="m 195.48735,289.48474 6.19379,10.72797 6.1938,10.72796 -12.38759,0 -12.38759,0 6.1938,-10.72796 z"
+       transform="matrix(0.4403822,0,0,1.4237103,-73.684027,-346.45278)"
+       inkscape:transform-center-y="-5.0911741"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\Bar\pivot.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <path
+       id="path25681"
+       style="fill:#002503;fill-opacity:1;stroke:none;stroke-width:0.491;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 6.3218276,42.809095 -3.144512,1.639176 h 0.01809 v 4.467944 h -0.01809 l 3.144512,1.63866 H 54.950899 l 3.14606,-1.63866 h -0.01809 v -4.467944 h 0.01809 l -3.14606,-1.639176 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\Bar\bg.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
+    <path
+       id="path25683"
+       style="fill:#08de1b;fill-opacity:1;stroke:none;stroke-width:0.490905;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+       d="m 5.7811721,53.261764 -3.144512,1.639176 h 0.01809 v 4.467944 h -0.01809 l 3.144512,1.63866 H 54.410244 l 3.14606,-1.63866 h -0.01809 V 54.90094 h 0.01809 l -3.14606,-1.639176 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\Bar\filling.png"
+       inkscape:export-xdpi="200"
+       inkscape:export-ydpi="200" />
   </g>
 </svg>
