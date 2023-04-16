@@ -15,6 +15,11 @@ run/main_scene="res://scens/level01.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://icon.svg"
 
+[display]
+
+window/size/viewport_width=700
+window/size/viewport_height=900
+
 [dotnet]
 
 project/assembly_name="Space_Jam"

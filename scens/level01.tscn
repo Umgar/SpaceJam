@@ -1,5 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c5qoif5kju6fh"]
 
+[ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_vl41y"]
 [ext_resource type="Script" path="res://Scripts/GenerateChangers.gd" id="2_2txik"]
 [ext_resource type="PackedScene" uid="uid://bq8lsayujtvbf" path="res://assets/player/character_body_2d.tscn" id="2_yqsu5"]
 [ext_resource type="Script" path="res://Scripts/scoring/ScoreLabel.cs" id="3_xtjn7"]
@@ -7,7 +8,16 @@
 [sub_resource type="Theme" id="Theme_j4mwy"]
 default_font_size = 22
 
+[ext_resource type="AudioStream" uid="uid://b52i7mcbbf07k" path="res://sound/music/soundtrack_1.wav" id="3_vhqgy"]
+[ext_resource type="PackedScene" uid="uid://dwd57l2vgta5m" path="res://assets/Bar/bar.tscn" id="4_v0wr7"]
+[ext_resource type="PackedScene" uid="uid://b218ohbj1msrj" path="res://assets/player/trail_2d.tscn" id="5_o0ej1"]
+
 [node name="level01" type="Node2D"]
+metadata/_edit_horizontal_guides_ = []
+
+[node name="ParallaxBackground" parent="." node_paths=PackedStringArray("player", "camera") instance=ExtResource("1_vl41y")]
+player = NodePath("../CharacterBody2D")
+camera = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -193)
@@ -15,11 +25,19 @@ position_smoothing_enabled = true
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("2_yqsu5")]
 
+[node name="Trail2D" parent="CharacterBody2D" instance=ExtResource("5_o0ej1")]
+position = Vector2(-20, 29)
+
+[node name="Trail2D2" parent="CharacterBody2D" instance=ExtResource("5_o0ej1")]
+position = Vector2(20, 29)
+
 [node name="GenerateChangers" type="Node2D" parent="." node_paths=PackedStringArray("player")]
 script = ExtResource("2_2txik")
 player = NodePath("../CharacterBody2D")
+minTimer = 0.6
 
 [node name="Timer" type="Timer" parent="GenerateChangers"]
+wait_time = 0.8
 autostart = true
 
 [node name="ScoreLabel" type="Label" parent="."]
@@ -28,5 +46,16 @@ offset_bottom = 23.0
 theme = SubResource("Theme_j4mwy")
 text = "Score: 0"
 script = ExtResource("3_xtjn7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_vhqgy")
+autoplay = true
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="Node2D" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_v0wr7")]
+position = Vector2(0, 183)
+maxVal = 1200.0
+player = NodePath("../CharacterBody2D")
 
 [connection signal="timeout" from="GenerateChangers/Timer" to="GenerateChangers" method="_on_timer_timeout"]

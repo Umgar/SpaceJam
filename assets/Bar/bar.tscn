@@ -1,0 +1,32 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwd57l2vgta5m"]
+
+[ext_resource type="Script" path="res://assets/Bar/bar.gd" id="1_h0ahi"]
+[ext_resource type="Texture2D" uid="uid://belpo1uai5qac" path="res://assets/Bar/bg.png" id="1_trycj"]
+[ext_resource type="Texture2D" uid="uid://b4qdwwag4qmpp" path="res://assets/Bar/filling.png" id="2_gc064"]
+[ext_resource type="Texture2D" uid="uid://dfsxcj3a3hhs8" path="res://assets/Bar/shell.png" id="3_vl64g"]
+[ext_resource type="Texture2D" uid="uid://bi64ojiuij4xi" path="res://assets/Bar/pivot.png" id="4_avutg"]
+
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("pivot", "filling", "background")]
+scale = Vector2(1, 0.51)
+script = ExtResource("1_h0ahi")
+pivot = NodePath("pivot")
+filling = NodePath("Filling")
+background = NodePath("Bg")
+
+[node name="Bg" type="Sprite2D" parent="."]
+texture = ExtResource("1_trycj")
+
+[node name="Filling" type="Sprite2D" parent="."]
+scale = Vector2(0.75, 1)
+texture = ExtResource("2_gc064")
+
+[node name="rect" type="Sprite2D" parent="."]
+texture = ExtResource("3_vl64g")
+
+[node name="pivot" type="Sprite2D" parent="."]
+z_index = 1
+position = Vector2(0.695, 5.882)
+scale = Vector2(0.0922481, 0.13846)
+texture = ExtResource("4_avutg")
+
+[node name="Camera2D" type="Camera2D" parent="."]

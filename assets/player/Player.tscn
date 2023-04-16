@@ -8,4 +8,11 @@
 [node name="CharacterBody2D" parent="." instance=ExtResource("1_tgi1o")]
 
 [node name="Trail2D" parent="CharacterBody2D" instance=ExtResource("2_2w8ey")]
-position = Vector2(0, 28)
+position = Vector2(-20, 28)
+points = PackedVector2Array(0, 60, 11.557, 30, 0, 0)
+
+[node name="Trail2D2" parent="CharacterBody2D" instance=ExtResource("2_2w8ey")]
+position = Vector2(20, 28)
+points = PackedVector2Array(0, 60, 11.557, 30, 0, 0)
+
+[node name="Camera2D" type="Camera2D" parent="."]
