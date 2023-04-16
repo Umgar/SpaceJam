@@ -6,12 +6,13 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6y1l"]
 size = Vector2(433, 35.5)
 
-[node name="Node2D" type="Node2D" node_paths=PackedStringArray("textField", "spriteImg")]
+[node name="Node2D" type="Node2D" node_paths=PackedStringArray("textField", "spriteImg", "area")]
 script = ExtResource("1_2tcpq")
 MinVal = 50
 MaxVal = 150
 textField = NodePath("Label")
 spriteImg = NodePath("Sprite2D")
+area = NodePath("Area2D")
 
 [node name="Area2D" type="Area2D" parent="."]
 

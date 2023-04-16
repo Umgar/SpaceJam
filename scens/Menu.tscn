@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdli803m6h87a"]
+
+[ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_qk084"]
+
+[node name="Menu" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="ParallaxBackground" parent="." instance=ExtResource("1_qk084")]

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://5ygomdxks80r"]
+[gd_scene load_steps=6 format=3 uid="uid://5ygomdxks80r"]
 
 [ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_cpsn7"]
+[ext_resource type="Script" path="res://Scripts/ChangeScene.gd" id="2_ni4qe"]
 
 [sub_resource type="FontFile" id="FontFile_6x7fj"]
 face_index = null
@@ -131,7 +132,15 @@ label_settings = SubResource("LabelSettings_v00bc")
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
-offset_top = 328.0
-offset_right = 8.0
-offset_bottom = 336.0
+offset_left = -96.0
+offset_top = 319.0
+offset_right = -9.0
+offset_bottom = 350.0
+scale = Vector2(2.33333, 2.27273)
 text = "Play again"
+icon_alignment = 1
+
+[node name="ChangeScene" type="Node2D" parent="."]
+script = ExtResource("2_ni4qe")
+
+[connection signal="pressed" from="Button" to="ChangeScene" method="_on_button_pressed"]
