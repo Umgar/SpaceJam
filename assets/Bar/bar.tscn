@@ -12,14 +12,14 @@ script = ExtResource("1_h0ahi")
 pivot = NodePath("pivot")
 filling = NodePath("Filling")
 background = NodePath("Bg")
-minVal = 100.0
+minVal = 300.0
 maxVal = 900.0
 
 [node name="Bg" type="Sprite2D" parent="."]
 texture = ExtResource("1_trycj")
 
 [node name="Filling" type="Sprite2D" parent="."]
-scale = Vector2(0.75, 1)
+scale = Vector2(0.5, 1)
 texture = ExtResource("2_gc064")
 
 [node name="rect" type="Sprite2D" parent="."]

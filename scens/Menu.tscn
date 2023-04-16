@@ -1,9 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://bdli803m6h87a"]
 
 [ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_qk084"]
-[ext_resource type="PackedScene" uid="uid://c3vg1aq8iwdot" path="res://assets/menu_btn.tscn" id="2_g4hmo"]
 [ext_resource type="Texture2D" uid="uid://dj3fxhwce5rww" path="res://assets/Banner/logo.png" id="2_m0tle"]
 [ext_resource type="AudioStream" uid="uid://b52i7mcbbf07k" path="res://sound/music/soundtrack_1.wav" id="3_u6v6p"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_0cxxo"]
+font_size = 35
+shadow_size = 11
+shadow_color = Color(0, 0, 0, 1)
+shadow_offset = Vector2(0, 0)
 
 [sub_resource type="GDScript" id="GDScript_652u1"]
 script/source = "extends Node2D
@@ -25,7 +30,39 @@ func _on_Exit():
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_qk084")]
 
-[node name="menuBtn" parent="." instance=ExtResource("2_g4hmo")]
+[node name="Button3" type="Button" parent="."]
+offset_left = -57.0
+offset_top = 168.0
+offset_right = -16.0
+offset_bottom = 199.0
+scale = Vector2(2.85152, 3.02304)
+
+[node name="Label" type="Label" parent="Button3"]
+layout_mode = 0
+offset_left = 5.96172
+offset_top = 5.29268
+offset_right = 102.962
+offset_bottom = 75.2927
+scale = Vector2(0.403356, 0.403356)
+text = "Play"
+label_settings = SubResource("LabelSettings_0cxxo")
+
+[node name="Button4" type="Button" parent="."]
+offset_left = -57.0
+offset_top = 299.0
+offset_right = -16.0
+offset_bottom = 330.0
+scale = Vector2(2.85152, 3.02304)
+
+[node name="Label" type="Label" parent="Button4"]
+layout_mode = 0
+offset_left = 5.96172
+offset_top = 5.29268
+offset_right = 139.962
+offset_bottom = 75.2927
+scale = Vector2(0.403356, 0.403356)
+text = "Exit"
+label_settings = SubResource("LabelSettings_0cxxo")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(0, -195)
@@ -40,3 +77,6 @@ autoplay = true
 script = SubResource("GDScript_652u1")
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[connection signal="pressed" from="Button3" to="MenuController" method="_on_Play"]
+[connection signal="pressed" from="Button4" to="MenuController" method="_on_Exit"]

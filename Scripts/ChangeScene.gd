@@ -7,4 +7,4 @@ func _on_button_pressed():
 
 
 func _on_Exit():
-	get_tree().quit()
+	get_tree().change_scene_to_file("res://scens/Menu.tscn")

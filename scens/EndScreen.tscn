@@ -159,7 +159,7 @@ offset_top = 319.0
 offset_right = -9.0
 offset_bottom = 350.0
 scale = Vector2(2.33333, 2.27273)
-text = "Exit"
+text = "Menu"
 icon_alignment = 1
 
 [node name="ChangeScene" type="Node2D" parent="."]
