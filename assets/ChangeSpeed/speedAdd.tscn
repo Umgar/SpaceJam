@@ -9,7 +9,7 @@ size = Vector2(433, 35.5)
 [node name="Node2D" type="Node2D" node_paths=PackedStringArray("textField", "spriteImg", "area")]
 script = ExtResource("1_2tcpq")
 MinVal = 50
-MaxVal = 150
+MaxVal = 250
 textField = NodePath("Label")
 spriteImg = NodePath("Sprite2D")
 area = NodePath("Area2D")
@@ -32,3 +32,4 @@ text = "100"
 horizontal_alignment = 1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]

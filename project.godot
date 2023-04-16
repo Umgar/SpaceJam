@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Space_Jam"
-run/main_scene="res://scens/level01.tscn"
+run/main_scene="res://scens/Menu.tscn"
 config/features=PackedStringArray("4.0", "C#", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+Globals="*res://Scripts/globals.gd"
 
 [display]
 

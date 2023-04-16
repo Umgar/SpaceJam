@@ -1,7 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://5ygomdxks80r"]
+[gd_scene load_steps=8 format=3 uid="uid://5ygomdxks80r"]
 
 [ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_cpsn7"]
 [ext_resource type="Script" path="res://Scripts/ChangeScene.gd" id="2_ni4qe"]
+[ext_resource type="AudioStream" uid="uid://b52i7mcbbf07k" path="res://sound/music/soundtrack_1.wav" id="3_fm80t"]
+
+[sub_resource type="GDScript" id="GDScript_edel5"]
+script/source = "extends Node2D
+@export var textLabel : Label
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	textLabel.text = textLabel.text + str(Globals.score)
+"
 
 [sub_resource type="FontFile" id="FontFile_6x7fj"]
 face_index = null
@@ -105,7 +115,10 @@ shadow_size = 11
 shadow_color = Color(0, 0, 0, 1)
 shadow_offset = Vector2(0, 0)
 
-[node name="EndScreen" type="Node2D"]
+[node name="EndScreen" type="Node2D" node_paths=PackedStringArray("textLabel")]
+script = SubResource("GDScript_edel5")
+textLabel = NodePath("Score")
+metadata/points = 0
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_cpsn7")]
 scroll_speed = 100.0
@@ -133,14 +146,30 @@ horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="."]
 offset_left = -96.0
+offset_top = 212.0
+offset_right = -9.0
+offset_bottom = 243.0
+scale = Vector2(2.33333, 2.27273)
+text = "Play again"
+icon_alignment = 1
+
+[node name="Button2" type="Button" parent="."]
+offset_left = -96.0
 offset_top = 319.0
 offset_right = -9.0
 offset_bottom = 350.0
 scale = Vector2(2.33333, 2.27273)
-text = "Play again"
+text = "Exit"
 icon_alignment = 1
 
 [node name="ChangeScene" type="Node2D" parent="."]
 script = ExtResource("2_ni4qe")
 
+[node name="AudioListener2D" type="AudioListener2D" parent="."]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_fm80t")
+autoplay = true
+
 [connection signal="pressed" from="Button" to="ChangeScene" method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="ChangeScene" method="_on_Exit"]

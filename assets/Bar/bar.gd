@@ -6,6 +6,7 @@ extends Node2D
 @export var minVal : float = 200
 @export var maxVal : float = 800
 @export var player : Node2D
+var preLoad = preload("res://scens/EndScreen.tscn")
 var sizeP
 var startPos
 var unit
@@ -13,16 +14,16 @@ var unit
 func _ready():
 	sizeP = filling.get_rect().size * filling.scale
 	startPos = filling.position.x - (sizeP.x/2)
-	unit =sizeP.x / (minVal+maxVal)
+	unit =sizeP.x / (maxVal)
 
-var speed = 400
+var speed=0
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	
 	if player != null:
 		speed = player.Speed
 		if speed > maxVal or speed < minVal:
-			print_debug("KONIEC!")
+			get_tree().change_scene_to_file("res://scens/EndScreen.tscn")
 			free()
 			return
 	pivot.position.x = startPos + (unit*speed)

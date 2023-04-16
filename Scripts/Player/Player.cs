@@ -5,7 +5,7 @@ public partial class Player : CharacterBody2D
 {
 
 	[Export]
-	public float Speed = 400; // How fast the player will move (pixels/sec).
+	public float Speed = 700; // How fast the player will move (pixels/sec).
 
 	public float ReverseSpeed = 200;
 	AnimatedSprite2D animatedSprite2D;

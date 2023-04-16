@@ -1,9 +1,42 @@
-[gd_scene load_steps=2 format=3 uid="uid://bdli803m6h87a"]
+[gd_scene load_steps=6 format=3 uid="uid://bdli803m6h87a"]
 
 [ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_qk084"]
+[ext_resource type="PackedScene" uid="uid://c3vg1aq8iwdot" path="res://assets/menu_btn.tscn" id="2_g4hmo"]
+[ext_resource type="Texture2D" uid="uid://dj3fxhwce5rww" path="res://assets/Banner/logo.png" id="2_m0tle"]
+[ext_resource type="AudioStream" uid="uid://b52i7mcbbf07k" path="res://sound/music/soundtrack_1.wav" id="3_u6v6p"]
+
+[sub_resource type="GDScript" id="GDScript_652u1"]
+script/source = "extends Node2D
+
+
+
+
+func _on_Play():
+	get_tree().change_scene_to_file(\"res://scens/level01.tscn\")
+
+
+func _on_Exit():
+	get_tree().quit()
+"
 
 [node name="Menu" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="ParallaxBackground" parent="." instance=ExtResource("1_qk084")]
+
+[node name="menuBtn" parent="." instance=ExtResource("2_g4hmo")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, -195)
+scale = Vector2(0.786, 0.786)
+texture = ExtResource("2_m0tle")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_u6v6p")
+autoplay = true
+
+[node name="MenuController" type="Node2D" parent="."]
+script = SubResource("GDScript_652u1")
+
+[node name="AudioListener2D" type="AudioListener2D" parent="."]

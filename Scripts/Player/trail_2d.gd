@@ -16,7 +16,7 @@ func _process(delta):
 	point = get_parent().global_position
 	point += startPoint
 	for i in range(0, get_point_count()):
-		var newPos = Vector2(points[i].x, points[i].y+5)
+		var newPos = Vector2(points[i].x, points[i].y+4)
 		remove_point(i)
 		add_point(newPos, i)
 	add_point(point)
