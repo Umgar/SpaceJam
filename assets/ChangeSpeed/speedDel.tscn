@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/boostSpeed/BoostSpeed.gd" id="1_r0a0r"]
 [ext_resource type="Texture2D" uid="uid://dbtne3vor4flu" path="res://assets/tilemap/rect2.png" id="2_2s612"]
-[ext_resource type="AudioStream" uid="uid://bhk0tfjdgkcvo" path="res://sound/effects/game_over.wav" id="2_rcl32"]
+[ext_resource type="AudioStream" uid="uid://cu5cpq5ako2xf" path="res://sound/effects/speed_up.wav" id="2_w6gdq"]
 [ext_resource type="AudioStream" uid="uid://dhl75eftnb4wh" path="res://sound/effects/speed_down.wav" id="3_rwpn1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_o6y1l"]
@@ -16,7 +16,7 @@ MaxVal = -50
 textField = NodePath("Label")
 spriteImg = NodePath("Sprite2D")
 area = NodePath("Area2D")
-soundAdd = ExtResource("2_rcl32")
+soundAdd = ExtResource("2_w6gdq")
 soundDel = ExtResource("3_rwpn1")
 audioStreamPlayer = NodePath("AudioStreamPlayer2D")
 
