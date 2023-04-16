@@ -44,27 +44,27 @@ func _on_timer_timeout():
 metadata/_edit_horizontal_guides_ = []
 
 [node name="ParallaxBackground" parent="." node_paths=PackedStringArray("player", "camera") instance=ExtResource("1_vl41y")]
-player = NodePath("../CharacterBody2D")
+player = NodePath("../Player")
 camera = NodePath("../Camera2D")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(0, -193)
 position_smoothing_enabled = true
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("2_yqsu5")]
+[node name="Player" parent="." instance=ExtResource("2_yqsu5")]
 Speed = 1000.0
 
-[node name="Trail2D" parent="CharacterBody2D" instance=ExtResource("5_o0ej1")]
+[node name="Trail2D" parent="Player" instance=ExtResource("5_o0ej1")]
 position = Vector2(-20, 29)
 lenght = 60
 
-[node name="Trail2D2" parent="CharacterBody2D" instance=ExtResource("5_o0ej1")]
+[node name="Trail2D2" parent="Player" instance=ExtResource("5_o0ej1")]
 position = Vector2(20, 29)
 lenght = 60
 
 [node name="GenerateChangers" type="Node2D" parent="." node_paths=PackedStringArray("player")]
 script = ExtResource("2_2txik")
-player = NodePath("../CharacterBody2D")
+player = NodePath("../Player")
 minTimer = 0.6
 maxTimer = 1.0
 
@@ -74,11 +74,11 @@ autostart = true
 
 [node name="Node2D" parent="GenerateChangers" node_paths=PackedStringArray("playerNode") instance=ExtResource("5_vs26d")]
 position = Vector2(-215, -924)
-playerNode = NodePath("../../CharacterBody2D")
+playerNode = NodePath("../../Player")
 
 [node name="Node2D2" parent="GenerateChangers" node_paths=PackedStringArray("playerNode") instance=ExtResource("6_2jbyl")]
 position = Vector2(216, -924)
-playerNode = NodePath("../../CharacterBody2D")
+playerNode = NodePath("../../Player")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vhqgy")
@@ -90,7 +90,7 @@ autoplay = true
 position = Vector2(0, 183)
 minVal = 600.0
 maxVal = 1400.0
-player = NodePath("../CharacterBody2D")
+player = NodePath("../Player")
 globalMusic = NodePath("../AudioStreamPlayer")
 Generator = NodePath("../GenerateChangers")
 

@@ -37,12 +37,13 @@ func SetNodePosition(newPos: Vector2):
 	position = newPos
 
 func _on_area_2d_body_entered(body : Node2D):
-	body.Speed += value
-	if(value < 0):
-		audioStreamPlayer.stream = soundDel
-	else:
-		audioStreamPlayer.stream = soundAdd
-	audioStreamPlayer.play()
+	if body.name == "Player":
+		body.Speed += value
+		if(value < 0):
+			audioStreamPlayer.stream = soundDel
+		else:
+			audioStreamPlayer.stream = soundAdd
+		audioStreamPlayer.play()
 		
 
 
