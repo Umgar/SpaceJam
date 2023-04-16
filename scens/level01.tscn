@@ -43,6 +43,7 @@ autoplay = true
 
 [node name="Node2D" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_v0wr7")]
 position = Vector2(0, 183)
+maxVal = 1200.0
 player = NodePath("../CharacterBody2D")
 
 [connection signal="timeout" from="GenerateChangers/Timer" to="GenerateChangers" method="_on_timer_timeout"]

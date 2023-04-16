@@ -21,5 +21,9 @@ func _process(delta):
 	
 	if player != null:
 		speed = player.Speed
+		if speed > maxVal or speed < minVal:
+			print_debug("KONIEC!")
+			free()
+			return
 	pivot.position.x = startPos + (unit*speed)
 

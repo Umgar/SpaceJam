@@ -10,7 +10,7 @@ size = Vector2(433, 35.5)
 script = ExtResource("1_r0a0r")
 playerNode = NodePath("Sprite2D")
 MinVal = -150
-MaxVal = 50
+MaxVal = 0
 textField = NodePath("Label")
 spriteImg = NodePath("Sprite2D")
 
