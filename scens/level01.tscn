@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://c5qoif5kju6fh"]
+[gd_scene load_steps=13 format=3 uid="uid://c5qoif5kju6fh"]
 
 [ext_resource type="PackedScene" uid="uid://dohvfjt2vrbxp" path="res://assets/Bg/background.tscn" id="1_vl41y"]
 [ext_resource type="Script" path="res://Scripts/GenerateChangers.gd" id="2_2txik"]
@@ -6,6 +6,8 @@
 [ext_resource type="AudioStream" uid="uid://b52i7mcbbf07k" path="res://sound/music/soundtrack_1.wav" id="3_vhqgy"]
 [ext_resource type="PackedScene" uid="uid://dwd57l2vgta5m" path="res://assets/Bar/bar.tscn" id="4_v0wr7"]
 [ext_resource type="PackedScene" uid="uid://b218ohbj1msrj" path="res://assets/player/trail_2d.tscn" id="5_o0ej1"]
+[ext_resource type="PackedScene" uid="uid://dff0lmkbr214y" path="res://assets/ChangeSpeed/speedAdd.tscn" id="5_vs26d"]
+[ext_resource type="PackedScene" uid="uid://dc2ehn0gvry0f" path="res://assets/ChangeSpeed/speedDel.tscn" id="6_2jbyl"]
 [ext_resource type="Texture2D" uid="uid://b4mjbia78l7af" path="res://assets/watchout.png" id="7_2rqot"]
 [ext_resource type="Script" path="res://scens/Instruction.gd" id="8_cv2gu"]
 
@@ -64,8 +66,16 @@ player = NodePath("../CharacterBody2D")
 minTimer = 0.6
 
 [node name="Timer" type="Timer" parent="GenerateChangers"]
-wait_time = 0.8
+wait_time = 4.0
 autostart = true
+
+[node name="Node2D" parent="GenerateChangers" node_paths=PackedStringArray("playerNode") instance=ExtResource("5_vs26d")]
+position = Vector2(-215, -924)
+playerNode = NodePath("../../CharacterBody2D")
+
+[node name="Node2D2" parent="GenerateChangers" node_paths=PackedStringArray("playerNode") instance=ExtResource("6_2jbyl")]
+position = Vector2(216, -924)
+playerNode = NodePath("../../CharacterBody2D")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_vhqgy")
@@ -91,7 +101,6 @@ script = SubResource("GDScript_g4o6y")
 timer = NodePath("Timer")
 
 [node name="Timer" type="Timer" parent="Label"]
-wait_time = 4.0
 autostart = true
 
 [node name="Instruction" type="Sprite2D" parent="."]
@@ -101,5 +110,5 @@ texture = ExtResource("7_2rqot")
 script = ExtResource("8_cv2gu")
 
 [connection signal="timeout" from="GenerateChangers/Timer" to="GenerateChangers" method="_on_timer_timeout"]
+[connection signal="timeout" from="GenerateChangers/Timer" to="Instruction" method="_on_timer_timeout"]
 [connection signal="timeout" from="Label/Timer" to="Label" method="_on_timer_timeout"]
-[connection signal="timeout" from="Label/Timer" to="Instruction" method="_on_timer_timeout"]
