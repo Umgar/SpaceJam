@@ -5,6 +5,9 @@ extends Node2D
 @export var textField : Label
 @export var spriteImg : Sprite2D
 @export var area : Node2D
+@export var soundAdd : AudioStream
+@export var soundDel : AudioStream
+@export var audioStreamPlayer : AudioStreamPlayer2D
 var value
 var minH
 # Called when the node enters the scene tree for the first time.
@@ -35,6 +38,12 @@ func SetNodePosition(newPos: Vector2):
 
 func _on_area_2d_body_entered(body : Node2D):
 	body.Speed += value
+	if(value < 0):
+		audioStreamPlayer.stream = soundDel
+	else:
+		audioStreamPlayer.stream = soundAdd
+	audioStreamPlayer.play()
+		
 
 
 

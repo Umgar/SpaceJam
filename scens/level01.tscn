@@ -32,6 +32,8 @@ func _ready():
 
 
 func _on_timer_timeout():
+	if Globals.played == false:
+		return
 	timer.wait_time = randf_range(timer_min, timer_max)
 	points += 1
 	self.text = str(points)
@@ -64,6 +66,7 @@ lenght = 60
 script = ExtResource("2_2txik")
 player = NodePath("../CharacterBody2D")
 minTimer = 0.6
+maxTimer = 1.0
 
 [node name="Timer" type="Timer" parent="GenerateChangers"]
 wait_time = 4.0
@@ -83,11 +86,13 @@ autoplay = true
 
 [node name="AudioListener2D" type="AudioListener2D" parent="."]
 
-[node name="bar" parent="." node_paths=PackedStringArray("player") instance=ExtResource("4_v0wr7")]
+[node name="bar" parent="." node_paths=PackedStringArray("player", "globalMusic", "Generator") instance=ExtResource("4_v0wr7")]
 position = Vector2(0, 183)
 minVal = 600.0
 maxVal = 1400.0
 player = NodePath("../CharacterBody2D")
+globalMusic = NodePath("../AudioStreamPlayer")
+Generator = NodePath("../GenerateChangers")
 
 [node name="Label" type="Label" parent="." node_paths=PackedStringArray("timer")]
 offset_left = -225.0

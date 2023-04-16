@@ -26,8 +26,8 @@
      showgrid="false"
      inkscape:snap-global="true"
      inkscape:zoom="4.1524866"
-     inkscape:cx="387.96031"
-     inkscape:cy="575.19752"
+     inkscape:cx="416.37702"
+     inkscape:cy="574.71588"
      inkscape:window-width="1920"
      inkscape:window-height="1009"
      inkscape:window-x="-8"
@@ -341,7 +341,7 @@
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.6667px;line-height:1.25;font-family:'MS Reference Sans Serif';-inkscape-font-specification:'MS Reference Sans Serif';white-space:pre;shape-inside:url(#rect2281);fill:#ffffff"><tspan
              x="323.54102"
              y="456.36613"
-             id="tspan15967">Stick
+             id="tspan16364">Stick
 </tspan></text>
         <text
            xml:space="preserve"
@@ -453,9 +453,9 @@
          style="font-size:18.6667px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect10378);fill:#fe00fc;fill-opacity:1;stroke:none;stroke-opacity:1;stroke-width:0.48498501;stroke-miterlimit:4;stroke-dasharray:none"><tspan
            x="234.55859"
            y="751.04777"
-           id="tspan15971"><tspan
+           id="tspan16368"><tspan
              style="font-family:'MS Reference Sans Serif';-inkscape-font-specification:'MS Reference Sans Serif'"
-             id="tspan15969">Watch out for speed</tspan></tspan></text>
+             id="tspan16366">Watch out for speed</tspan></tspan></text>
       <g
          id="g14656"
          transform="matrix(0.77930812,0,0,0.63747644,19.187056,71.713407)"
@@ -492,27 +492,45 @@
          d="M 381.33984 756.70703 L 381.33984 768.42578 L 378.4375 768.42578 L 380.74219 771.69141 L 383.04688 774.95703 L 385.35156 771.69141 L 387.65625 768.42578 L 384.75391 768.42578 L 384.75391 756.70703 L 381.33984 756.70703 z "
          transform="scale(0.26458333)" />
     </g>
+    <path
+       id="rect15481"
+       style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0836251;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 125.68521,151.56214 -1.42073,1.31934 -1.4204,1.31935 1.4204,1.31989 1.42073,1.31934 v -1.39663 h 5.23151 v 1.39663 l 1.42073,-1.31934 1.42039,-1.31989 -1.42039,-1.31935 -1.42073,-1.31934 v 1.39663 h -5.23151 z"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\boosts\sameSize.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300" />
+    <rect
+       style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.090011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect15693"
+       width="0.63194078"
+       height="5.2779055"
+       x="133.75784"
+       y="151.56215" />
+    <rect
+       style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.090011;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect15779"
+       width="0.63194078"
+       height="5.2779055"
+       x="122.21214"
+       y="151.56215" />
     <g
-       id="g15886"
-       transform="matrix(0.76291959,0,0,1.2273944,25.070115,-35.035484)">
+       id="g16192"
+       transform="translate(22.521062,10.449562)"
+       inkscape:export-filename="C:\SpaceJam\SpaceJam\assets\boosts\turbo.png"
+       inkscape:export-xdpi="300"
+       inkscape:export-ydpi="300">
       <path
-         id="rect15481"
-         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0864182;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         d="m 102.31659,151.92361 -1.86223,1.07491 -1.861789,1.07492 1.861789,1.07536 1.86223,1.07491 v -1.13788 h 6.85722 v 1.13788 l 1.86223,-1.07491 1.86179,-1.07536 -1.86179,-1.07492 -1.86223,-1.07491 v 1.13788 h -6.85722 z" />
-      <rect
-         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0930174;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect15693"
-         width="0.82831895"
-         height="4.3000894"
-         x="112.89783"
-         y="151.92361" />
-      <rect
-         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0930174;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-         id="rect15779"
-         width="0.82831895"
-         height="4.3000894"
-         x="97.764252"
-         y="151.92361" />
+         id="path16078"
+         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.083625;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 103.14105,151.66811 h 1.3963 v 5.23121 h 2.4846 v -5.23121 h 1.39681 l -1.3193,-1.4211 -1.31981,-1.42007 -1.3193,1.42007 z" />
+      <path
+         id="path16185"
+         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0543469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 107.23485,154.44402 h 0.90744 v 3.3997 h 1.61472 v -3.3997 h 0.90777 l -0.8574,-0.92356 -0.85773,-0.92288 -0.8574,0.92288 z" />
+      <path
+         id="path16187"
+         style="fill:#fe00fc;fill-opacity:1;stroke:none;stroke-width:0.0543469;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="m 100.89503,154.44402 h 0.90744 v 3.3997 h 1.61472 v -3.3997 h 0.90777 l -0.8574,-0.92356 -0.85773,-0.92288 -0.8574,0.92288 z" />
     </g>
   </g>
 </svg>

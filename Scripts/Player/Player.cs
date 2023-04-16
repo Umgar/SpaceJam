@@ -23,6 +23,8 @@ public partial class Player : CharacterBody2D
 	// Called every frame. 'delta' is the elapsed time since the previous frame.
 	public override void _Process(double delta)
 	{
+		if (Speed == 0)
+			return;
 		Speed += 1f * (float)delta;
 		var velocity = Vector2.Zero; // The player's movement vector.
 		ReverseSpeed = Speed / 2;

@@ -11,14 +11,17 @@ var screenSize
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	screenSize = get_viewport_rect().size
+	Globals.played = true
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
 
-
+var gen = true
 func _on_timer_timeout():
+	if !gen:
+		return
 	self.get_child(0).wait_time = randf_range(minTimer, maxTimer)
 	var createdNode
 	var xPos = randf_range(-(screenSize.x/2), (screenSize.x/2))
@@ -29,3 +32,8 @@ func _on_timer_timeout():
 	createdNode.SetPlayer(player)
 	self.add_child(createdNode)
 	createdNode.SetNodePosition(Vector2(xPos, yPos))
+
+func stop():
+	gen = false
+	visible = false
+	Globals.played = false
